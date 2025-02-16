@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textarea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form >
+        <h2>Formulario de contacto</h2>
+
+        <fieldset>
+            <legend>INFORMACION BASICA</legend>
+            <div class="form_input">
+                <label for="Nombre">Nombre</label>
+                <input type="text" placeholder="Carlos" id="Nombre">
+            </div>
+            <div class="form_input">
+                <label for="Email">Email</label>
+                <input type="email" placeholder="ejemplo@gmail.com" id="Email">
+            </div>
+            <div class="form_input">
+                <label for="Asunto">Asunto</label>
+                <input type="text" placeholder="comenta aqui..." id="Asunto">
+            </div>
+        </fieldset>
+        
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select name="type-of-use">
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form_input"> 
+            <label >referente
+                <input type="text" list="referente" name="referente">
+                    <datalist id="referente" name="type-of-user" >
+                        <option value="Soy Aday">el puto amo</option>
+                        <option value="user2">Una empresa</option>
+                        <option value="user3">Un amigo</option>
+                    </datalist>
+            </label>
+        </div>
+
+        <div class="form_input">
+            <label >mensaje
+                <textarea placeholder="deja tu mensaje...."></textarea>
+            </label>
+        </div>
+        <div class="form_input">
+            <label >Acepto los terminos y condiciones
+                    <input type="checkbox" class="checkbox">
+            </label>
+
+        </div>
+
+
+    </form>
+</body>
+</html>
